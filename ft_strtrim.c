@@ -30,8 +30,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t		len;
 	char		*t;
 
-	if (!s1 || !set)
+	if (!s1)
 		return (NULL);
+	if (!set)
+		return (ft_strdup(s1));
 	start = s1;
 	end = s1 + ft_strlen(s1);
 	while (*start && is_in_set(*start, set))
