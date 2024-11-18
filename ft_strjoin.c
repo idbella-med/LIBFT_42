@@ -19,24 +19,23 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 	int		j;
 
-	if (!s1 || !s2)
+	if (!s1 && !s2)
 		return (NULL);
+	if (!s1)
+		return (ft_strdup(s2));
+	if (!s2)
+		return (ft_strdup(s1));
 	j = 0;
 	i = 0;
 	maxlen = ft_strlen(s1) + ft_strlen(s2);
 	alls = malloc((maxlen + 1) * (sizeof(char)));
 	if (alls == NULL)
 		return (NULL);
-	while (s1[j] != '\0')
-	{
-		alls[j] = s1[j];
-		j++;
-	}
-	while (s2[i] != '\0')
-	{
-		alls[j + i] = s2[i];
-		i++;
-	}
-	alls[j + i] = '\0';
+	while (s1[i])
+		alls[j++] = s1[i++];
+	i = 0;
+	while (s2[i])
+		alls[j++] = s2[i++];
+	alls[j] = '\0';
 	return (alls);
 }
