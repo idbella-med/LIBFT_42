@@ -12,31 +12,44 @@
 
 #include "libft.h"
 
+static int	chek_sign(char const *s, int i)
+{
+	int	sign;
+
+	sign = 1;
+	if (s[i] == '-')
+	{
+		sign *= -1;
+		i++;
+	}
+	else if (s[i] == '+')
+		i++;
+	return (sign);
+}
+
 int	ft_atoi(const char	*str)
 {
 	int		i;
-	int		s;
-	long	r;
+	int		sign;
+	long	result;
+	long	temp;
 
 	i = 0;
-	s = 1;
-	r = 0;
+	result = 0;
 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
-	if (str[i] == 45)
-	{
-		s *= -1;
-		i++;
-	}
-	else if (str[i] == 43)
+	sign = chek_sign(str, i);
+	if (str[i] == '-' || str[i] == '+')
 		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		r = r * 10 + (str[i++] - '0');
-		if (r < 0 && s == 1)
+		temp = result;
+		result = result * 10 + (str[i++] - '0');
+		if ((result / 10) != temp && sign == 1)
 			return (-1);
-		else if (r < 0 && s == -1)
+		else if ((result / 10) != temp && sign == -1)
 			return (0);
 	}
-	return (r * s);
+	return (result * sign);
 }
+
