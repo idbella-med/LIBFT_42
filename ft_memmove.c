@@ -25,7 +25,7 @@ static void	check_overlap(char *d, const char *s, size_t len)
 			d[n] = s[n];
 		}
 	}
-	else
+	else if (d < s)
 	{
 		n = 0;
 		while (n < len)
