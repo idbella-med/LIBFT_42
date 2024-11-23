@@ -4,23 +4,27 @@ libft is a personal or educational project commonly associated with the 42 Schoo
 What does libft usually include?
 libft typically consists of the following:
 
-String functions:
+1.String functions:
 
 ft_strlen(), ft_strcpy(), ft_strcat(), etc.
 These are implementations of standard string manipulation functions from the C library (like strlen(), strcpy(), strcat(), etc.), written from scratch.
-Memory functions:
+
+2.Memory functions:
 
 ft_memset(), ft_memcpy(), ft_memmove(), etc.
 These mimic memory manipulation functions like memset(), memcpy(), memmove(), etc.
-Character functions:
+
+3.Character functions:
 
 ft_isalpha(), ft_isdigit(), ft_isalnum(), etc.
 These replicate functions that check the properties of characters, like isalpha(), isdigit(), etc.
-Other utility functions:
+
+4.Other utility functions:
 
 ft_atoi(), ft_strdup(), ft_itoa(), etc.
 These are often custom implementations of utility functions like atoi(), strdup(), itoa(), etc.
-Linked lists (optional but common):
+
+4.Linked lists (optional but common):
 
 Some versions of libft include implementations for basic data structures like linked lists (t_list), with functions for adding, removing, or traversing nodes.
 Why is libft important?
