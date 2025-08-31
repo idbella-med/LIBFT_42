@@ -4,7 +4,7 @@ libft is a personal or educational project commonly associated with the 42 Schoo
 What does libft usually include?
 libft typically consists of the following:
 
-<h6>1.String functions</h6>:
+<h4>1.String functions:</h4>
 
 ft_strlen(), ft_strcpy(), ft_strcat(), etc.
 These are implementations of standard string manipulation functions from the C library (like strlen(), strcpy(), strcat(), etc.), written from scratch.
