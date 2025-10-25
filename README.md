@@ -13,12 +13,6 @@
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Structure](#structure)
-- [Functions (high level)](#functions-high-level)
-- [Examples](#examples)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 - Reimplementation of many standard C functions (strings, memory, chars).
@@ -36,7 +30,7 @@ make
 ```
 After make you should have libft.a in the project root.
 
-Usage:
+## Usage:
 
 Example main.c:
 ```c
