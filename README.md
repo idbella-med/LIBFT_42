@@ -36,15 +36,26 @@ git clone https://github.com/idbella-med/LIBFT_42.git
 cd LIBFT_42
 make
 # optional: make bonus
+```
 After make you should have libft.a in the project root.
 
-Usage
+Usage:
 
-Include the header in your project:
-
+Example main.c:
+```c
 #include "libft.h"
 
+int main(void)
+{
+    char *s = ft_strdup("Hello, LIBFT_42!");
+    if (!s) return 1;
+    ft_putendl_fd(s, 1);
+    free(s);
+    return 0;
+}
+```
 
-Compile and link:
-
-gcc -Wall -Wextra -Werror main.c ./libft.a
+```bash
+gcc main.c ./libft.a -o example
+./example
+```
