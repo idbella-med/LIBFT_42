@@ -2,7 +2,6 @@
 
 <!-- Badges (replace URLs if you host CI or want different badges) -->
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](#)
 [![42 School](https://img.shields.io/badge/42-School-orange.svg)](#)
 
 ---
