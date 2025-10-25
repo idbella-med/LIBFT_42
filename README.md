@@ -7,8 +7,6 @@
 
 ---
 
-![LIBFT Logo](assets/logo.png) <!-- add a small repo logo at assets/logo.png -->
-
 ## Introduction
 `LIBFT_42` is a custom C library built for the 42 curriculum. It reimplements common C standard library functions and provides useful utilities that can be reused across projects.
 
